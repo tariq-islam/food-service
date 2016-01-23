@@ -7,7 +7,6 @@
 	<artifactId>dbDemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<warName>ROOT</warName>
 
 	<name>pgBoot</name>
 	<description>Demo project for Spring Boot</description>
@@ -83,7 +82,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<warname>ROOT</warname>
 	</build>
-	
 
 </project>
