@@ -15,7 +15,7 @@ import javax.persistence.Id;
 /**
 The food object will be stored in a table with the name "food"
 **/
-@Table(name="food")
+@Table(name="food", schema="services")
 /**
 The Food class defines a food object for storage in a relational database system. 
 **/
