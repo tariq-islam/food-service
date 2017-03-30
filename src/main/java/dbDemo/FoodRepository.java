@@ -5,10 +5,7 @@
 
 package dbDemo;
 
-import java.util.List;
-
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 /**
@@ -16,7 +13,4 @@ The FoodRepository extends the CrudRepository interface for use by food objects 
 Allows for CRUD operations on food items within the database. 
 **/
 @RepositoryRestResource
-public interface FoodRepository extends CrudRepository<Food, Integer> {
-
-
-}
+public interface FoodRepository extends CrudRepository<Food, Integer> {}

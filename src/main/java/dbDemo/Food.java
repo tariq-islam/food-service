@@ -41,7 +41,7 @@ We explicitly map the id variable to the "r_id column in the database table
 This is the constructor for the database object. 
 @param name The name of the  food entry
 @param author The creator of the food object
-@param raiting A rating of the particular food item
+@param rating A rating of the particular food item
 @param category Culinary category the food item belongs to
 **/
  public Food(String name, String author, int rating, String category) {

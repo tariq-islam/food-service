@@ -24,8 +24,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class FoodRestController {
 	
 	@Autowired
-	  private FoodRepository repo;
-	
+	private FoodRepository repo;
+
 	/** 
 	the getAll method retrieves all food items in the database. This is mapped to hte GET rest action
 	@return A List() of food items
@@ -34,8 +34,8 @@ public class FoodRestController {
 	  public List<Food> getAll() {
 	    return (List<Food>) repo.findAll();
 	  }
-	  /** 
-	  the create method is mapped to the POST rest action. This will invoke the food repository and create a new 
+	  /**
+	  the create method is mapped to the POST rest action. This will invoke the food repository and create a new
 	  food item in the database
 	  @param food The food item to be added to the database
 	  @return newly created food item into the database
@@ -54,7 +54,7 @@ public class FoodRestController {
 		  repo.delete(id);
 
 	  }
-	  
+
 	  /**
 	  the update method will update the values of an existing food item
 	  @param id the id of the food item whose properties are to be updated
@@ -68,7 +68,7 @@ public class FoodRestController {
 		    update.setAuthor(food.getAuthor());
 		    update.setRating(food.getRating());
 		    update.setCategory(food.getCategory());
-		    
+
 		    return repo.save(update);
 	  }
 
