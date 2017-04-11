@@ -17,7 +17,7 @@ The food object will be stored in a table with the name "food"
 **/
 @Table(name="food")
 /**
-The Food class defines a food object for storage in a relational database system. 
+The Food class defines a food object for storage in a relational database system.
 **/
 public class Food {
 
@@ -34,21 +34,23 @@ We explicitly map the id variable to the "r_id column in the database table
  private String author;
  private int rating;
  private String category;
- 
+ private String country;
+
 
  protected Food(){}
 /**
-This is the constructor for the database object. 
+This is the constructor for the database object.
 @param name The name of the  food entry
 @param author The creator of the food object
 @param raiting A rating of the particular food item
 @param category Culinary category the food item belongs to
 **/
- public Food(String name, String author, int rating, String category) {
+ public Food(String name, String author, int rating, String category, String country) {
      this.name = name;
      this.author = author;
      this.rating = rating;
      this.category = category;
+     this.country = country;
  }
 
 public int getId() {
@@ -90,6 +92,14 @@ public String getCategory() {
 public void setCategory(String category) {
 	this.category = category;
 }
- 
- 
+
+public String getCountry() {
+  return country;
+}
+
+public void setCountry(String country) {
+  this.country = country;
+}
+
+
 }
